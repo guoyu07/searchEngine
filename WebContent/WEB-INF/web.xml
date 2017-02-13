@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>searchEngine</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>dimQueryServlet</servlet-name>
+    <servlet-class>org.com.ccnu.data.servlet.DimQueryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dimQueryServlet</servlet-name>
+    <url-pattern>/dimQuery</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>booleanQueryServlet</servlet-name>
+    <servlet-class>org.com.ccnu.data.servlet.BooleanQueryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>booleanQueryServlet</servlet-name>
+    <url-pattern>/booleanQuery</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>prefixQueryServlet</servlet-name>
+    <servlet-class>org.com.ccnu.data.servlet.PrefixQueryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>prefixQueryServlet</servlet-name>
+    <url-pattern>/prefixQuery</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>rangeQueryServlet</servlet-name>
+    <servlet-class>org.com.ccnu.data.servlet.RangeQueryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>rangeQueryServlet</servlet-name>
+    <url-pattern>/rangeQuery</url-pattern>
+  </servlet-mapping>
+</web-app>
